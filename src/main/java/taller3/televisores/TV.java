@@ -6,7 +6,7 @@ public class TV {
     private Marca marca;
     public int canal = 1;
     public int precio = 500;
-    private boolean estado;    //encendido = True
+    private boolean estado;    
     private int volumen = 1;
     private Control control;
     
@@ -15,8 +15,7 @@ public class TV {
         this.estado = estado;
         numTV = numTV + 1;
     }
-    // metodos set y get para los atributos marca, canal, precio, volumen y control.
-    //metodos para marca
+
     public void setMarca(Marca marca){
         this.marca = marca;
     }
@@ -24,7 +23,7 @@ public class TV {
         return this.marca;
     }
 
-    //metodos para el canal
+
     public void setCanal(int canal){
         if(this.estado == true){
             if(canal <= 120 && canal >=1){
@@ -67,7 +66,7 @@ public class TV {
     public int getPrecio(){
         return this.precio;
     }
-    //metodos para el volumen
+
     public void setVolumen(int volumen){
         if(this.estado == true){
             if(volumen >= 0 && volumen <=7){
@@ -95,21 +94,20 @@ public class TV {
         return;
     }
 
-    //metodos para control
     public void setControl(Control control){
         this.control = control;
     }
     public Control getControl(){
         return this.control;
     }
-    //set y get para numTV
+
     public void setNumTV(int NumTV){
         numTV = NumTV;
     }
     public int getNumTV(){
         return numTV;
     }
-    //Encendido y apagado y metodo getEstado
+
     public void turnOn(){
         this.estado = true;
     }
