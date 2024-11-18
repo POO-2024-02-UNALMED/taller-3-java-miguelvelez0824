@@ -41,9 +41,6 @@ public class TV {
             if(this.canal < 120){
                 this.canal = this.canal + 1;
             }
-            else{
-                this.canal = 1;
-            }
         }
         return;
     }
@@ -52,9 +49,6 @@ public class TV {
         if(this.estado == true){
             if(this.canal > 1){
                 this.canal = this.canal - 1;
-            }
-            else{
-                this.canal = 120;
             }
         }
         return;
