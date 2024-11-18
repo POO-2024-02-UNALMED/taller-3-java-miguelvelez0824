@@ -95,10 +95,10 @@ public class TV {
         return this.control;
     }
 
-    public void setNumTV(int NumTV){
+    public static void setNumTV(int NumTV){
         numTV = NumTV;
     }
-    public int getNumTV(){
+    public static int getNumTV(){
         return numTV;
     }
 
